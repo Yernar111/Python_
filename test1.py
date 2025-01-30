@@ -1,13 +1,19 @@
 n = int(input())
 a=[]
-for i in range(n):
+t=int(input())
+a.append(t)
+m=k=a[0]
+t=j=0
+for i in range(1,n):
     t=int(input())
     a.append(t)
+    if a[i]>m:
+        m=a[i]
+        t=i
+    if a[i]<k:
+        k=a[i]
+        j=i
 
-k,m=0,0
-for i in range(len(a)):
-    if a[i]%2==0:
-        m+=1
-    else:
-        k+=1
-print(f"Even: {m}",f"Odd: {k}")
+a[t]=k
+a[j]=m
+print(a)
