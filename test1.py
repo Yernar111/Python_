@@ -1,9 +1,2 @@
-def check(a,n):
-    k=1
-    for i in range(n):
-        k*=a
-    return k
-        
-a=int(input())
-n=int(input())
-print(check(a,n))
+x = lambda a,b: a+b
+print(x(1,2))
