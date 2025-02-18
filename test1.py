@@ -1,2 +1,10 @@
-x = lambda a,b: a+b
-print(x(1,2))
+import json
+
+x={
+    "a": 1,
+    "B": True,
+    "abcd": "efgh",
+}
+
+with open("test_json", "w") as abcd:
+    json.dump(x, abcd)
